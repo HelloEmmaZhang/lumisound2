@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picbg2205"
+    tools:context="com.example.administrator.lumisound.MainActivity">
+
+    <Button
+        android:id="@+id/back2d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_select"
+        android:clickable="true"
+
+
+        android:layout_above="@+id/textView1"
+        android:layout_toStartOf="@+id/myring" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/pic_logo"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.administrator.lumisound.MyRing
+        android:id="@+id/myring"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/on_off"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Connect"
+        android:id="@+id/textView1"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/biaopan"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/myring"
+        android:text="value"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>
